@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?><LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/white_back">
+    
+    <LinearLayout android:id="@+id/LinearLayout05"
+		android:orientation="horizontal" android:layout_width="279dp"
+		android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+		<TextView android:id="@+id/textViewSchool" android:text="选择限制学校:  "
+			android:textColor="@color/gray" android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+            android:textSize="20dp">
+		</TextView>
+            </LinearLayout>
+		<LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+ 			<RadioGroup android:id="@+id/radioGroupSchoolChooser" android:contentDescription="学校" android:layout_width="wrap_content" android:layout_height="wrap_content">
+	     		<RadioButton android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/radioButtonSchoolChooserNoLimit" android:text="不限" android:checked="true"
+                    style="@style/CustomCheckboxTheme"
+                    android:textColor="@color/gray"
+                    android:textSize="20dp"></RadioButton>
+	     		<RadioButton android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/radioButtonSchoolChooserFree" android:text="自由选择"
+                    style="@style/CustomCheckboxTheme"
+                    android:textColor="@color/gray"
+                    android:textSize="20dp"></RadioButton>
+	  		</RadioGroup>
+
+
+            <CheckBox
+            	android:id="@+id/checkBoxSchoolA"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SchoolA"
+                style="@style/CustomCheckboxTheme"
+                android:textColor="@color/gray"
+                android:textSize="20dp" />
+            <CheckBox
+                android:id="@+id/checkBoxSchoolB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SchoolB"
+                style="@style/CustomCheckboxTheme"
+                android:textColor="@color/gray"
+                android:textSize="20dp" />
+
+            <CheckBox
+                android:id="@+id/checkBoxSchoolC"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SchoolC"
+                style="@style/CustomCheckboxTheme"
+                android:textColor="@color/gray"
+                android:textSize="20dp" />
+            <CheckBox
+                android:id="@+id/checkBoxSchoolD"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SchoolD"
+                style="@style/CustomCheckboxTheme"
+                android:textColor="@color/gray"
+                android:textSize="20dp" />
+            <CheckBox
+                android:id="@+id/checkBoxSchoolE"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SchoolE"
+                style="@style/CustomCheckboxTheme"
+                android:textColor="@color/gray"
+                android:textSize="20dp" />
+            
+    	</LinearLayout>
+    </LinearLayout>
+</LinearLayout>

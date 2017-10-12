@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:cview="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/white_back">
+    <ScrollView
+		android:layout_width="fill_parent" android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/contentFontTextSize">
+		<LinearLayout
+			android:orientation="vertical" android:layout_width="fill_parent"
+			android:layout_height="wrap_content">
+    	<RelativeLayout
+			android:orientation="horizontal" android:layout_width="fill_parent"
+			android:layout_height="250dp">
+
+            <com.ua.view.CustomImageView
+                android:id="@+id/activity_imageA"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                cview:type="square_round"
+                cview:borderRadius="30dp"
+                android:layout_gravity="center" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_alignParentTop="true"
+                android:paddingTop="10dp"
+                android:background="#90ffffff">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="火热召集中"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/gray"
+                    android:textSize="22dp"
+                    android:textStyle="italic" />
+                </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:paddingRight="30dp">
+        	<Button
+			   	android:id="@+id/buttonDetailComment"
+		    	android:layout_width="50dp"
+		        android:layout_height="50dp"
+			    android:layout_marginBottom="5dp"
+                android:layout_marginTop="40dp"
+			    android:text="评论"
+		        android:background="@drawable/rectangle_button_circle"
+		        android:textColor="@color/white"
+                android:layout_marginLeft="30dp" />
+        	        
+        	<Button
+			   	android:id="@+id/buttonDetailJoin"
+		    	android:layout_width="50dp"
+		        android:layout_height="50dp"
+			    android:layout_marginBottom="5dp"
+                android:layout_marginTop="40dp"
+			    android:text="加入"
+		        android:background="@drawable/rectangle_button_circle_blue"
+		        android:textColor="@drawable/rectangle_button_text"
+                android:layout_marginLeft="20dp" />
+        	        
+        	<Button
+			   	android:id="@+id/buttonDetailSave"
+		    	android:layout_width="50dp"
+		        android:layout_height="50dp"
+			    android:layout_marginBottom="5dp"
+                android:layout_marginTop="40dp"
+			    android:text="收藏"
+		        android:background="@drawable/rectangle_button_circle_orange"
+		        android:textColor="@drawable/rectangle_button_text"
+                android:layout_marginLeft="20dp" />
+            </LinearLayout>
+        </RelativeLayout>
+        
+    <LinearLayout android:id="@+id/LinearLayout0"
+			android:orientation="vertical" android:layout_width="fill_parent"
+			android:layout_height="wrap_content">
+		<RelativeLayout
+			android:orientation="horizontal" android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="0dp"
+            android:background="#e8e8e8">
+    		<LinearLayout android:id="@+id/thumbnail"   
+        		android:layout_width="wrap_content"  
+        		android:layout_height="wrap_content"  
+        		android:padding="3dip"        
+        		android:layout_alignParentRight="true"  
+        		android:layout_marginRight="5dip"
+                android:layout_centerInParent="true">
+          
+        		<ImageView       
+            	android:id="@+id/imageViewDetailAuthor"     
+            	android:layout_width="50dip"  
+            	android:layout_height="50dip"  />
+          
+ 		   </LinearLayout>  
+		    
+			<TextView android:id="@+id/textViewDetailTitle"
+			 	android:layout_height="match_parent"
+                android:layout_toLeftOf="@+id/thumbnail"
+        		android:gravity="left"
+        		android:layout_alignParentLeft="true"
+        		android:textColor="@color/lightorange"
+        		android:typeface="sans"   
+        		android:textSize="30dip"  
+				android:layout_marginLeft="10dip"
+                android:layout_width="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentTop="true"
+                android:layout_centerInParent="true"
+                android:textAlignment="center">
+			</TextView>
+
+			
+			
+		</RelativeLayout>
+	    <LinearLayout
+			android:orientation="vertical" android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp">
+			<TextView android:id="@+id/textViewDetailStartTime" 
+				android:layout_height="wrap_content"
+		        android:layout_alignParentLeft="true"
+        		android:textColor="@color/gray"
+        		android:textSize="20dip"  
+        		android:gravity="left"
+        		android:layout_marginTop="1dip"  
+        		android:layout_marginLeft="5dip"
+				android:layout_width="wrap_content">
+			</TextView>
+	    	<TextView
+				android:textColor="@color/gray"
+				android:gravity="left"
+				android:text="活动地点："
+				android:textSize="20dip"
+				android:layout_marginLeft="5dp"
+				android:layout_marginRight="5dp"
+				android:layout_alignParentLeft="true"
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content">
+			</TextView>
+	        			
+		    <RelativeLayout
+				android:orientation="horizontal" android:layout_width="fill_parent"
+				android:layout_height="wrap_content">
+		        	        
+				<TextView android:id="@+id/textViewDetailAddress"
+				    android:layout_marginLeft="30dp"
+				    android:layout_marginBottom="5dp"
+					android:textColor="@color/gray" android:layout_height="50dp"
+					android:layout_width="fill_parent"
+                    android:background="@null"
+                    android:textSize="@dimen/contentFontTextSize"
+                    android:layout_alignParentLeft="false"
+                    android:layout_centerInParent="true"
+                    android:textAlignment="center">
+                    </TextView>
+                <EditText
+                    android:id="@+id/editTextDetailAddress"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"/>
+				<Button
+		   			android:id="@+id/buttonDetailMap"
+		        	android:layout_width="40dp"
+		        	android:layout_height="40dp"
+				    android:layout_alignParentRight="true"
+				    android:layout_marginBottom="5dp"
+				    android:layout_marginRight="5dp"
+				    android:layout_gravity="right"
+				    android:layout_marginTop="5dp"
+                    android:background="@drawable/checkbox_pressed"
+			        android:textColor="@drawable/rectangle_button_text"
+                    android:visibility="gone"/>
+			</RelativeLayout>
+
+			<!--<com.baidu.mapapi.map.MapView-->
+   	 			<!--android:id="@+id/bmapViewDetail"-->
+    			<!--android:layout_width="fill_parent"-->
+    			<!--android:layout_height="200dp"-->
+    	        <!--android:layout_marginBottom="5dip"-->
+   		        <!--android:layout_marginTop="5dip"-->
+    	        <!--android:layout_marginLeft="5dip"-->
+   		        <!--android:layout_marginRight="5dip"-->
+    			<!--android:clickable="true" />-->
+		</LinearLayout>
+	</LinearLayout>    
+	<RelativeLayout
+		android:orientation="vertical" android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+        android:background="@color/lightgray">
+	   	<TextView android:id="@+id/textViewDetailDDescription" android:inputType="textMultiLine"
+			android:textColor="@color/gray" android:layout_height="wrap_content"
+			android:text="活动介绍"
+			android:textSize="@dimen/contentFontTextSize"
+			android:gravity="left"
+			android:layout_marginLeft="10dp"
+			android:layout_marginRight="10dp"
+			android:layout_alignParentLeft="true"
+			android:layout_width="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp">
+		</TextView>
+	    <TextView 
+	        android:id="@+id/textViewDetailDescription" android:inputType="textMultiLine"
+			android:textColor="@color/gray"
+			android:gravity="left"
+			android:textSize="@dimen/contentFontTextSize"
+			android:layout_below="@+id/textViewDetailDDescription"
+			android:layout_marginLeft="30dp"
+			android:layout_marginRight="10dp"
+			android:layout_alignParentLeft="true"
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp">
+		</TextView>
+	</RelativeLayout>
+	<RelativeLayout
+		android:orientation="vertical" android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp">
+		<TextView android:id="@+id/textViewDetailDLimit" 
+			android:textColor="@color/gray"
+			android:gravity="left"
+			android:textSize="@dimen/contentFontTextSize"
+			android:layout_marginLeft="10dp"
+			android:layout_marginRight="10dp"
+			android:text="活动详情"
+			android:layout_alignParentLeft="true"
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp">
+		</TextView>
+	<TextView android:id="@+id/textViewDetailLimit"
+		android:textColor="@color/gray" android:layout_height="wrap_content"
+		android:gravity="left"
+		android:textSize="@dimen/contentFontTextSize"
+		android:layout_below="@+id/textViewDetailDLimit"
+		android:layout_marginLeft="30dp"
+		android:layout_marginRight="5dp"
+		android:layout_alignParentLeft="true"
+		android:layout_width="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp">
+	</TextView>
+
+	</RelativeLayout>
+    </LinearLayout>
+</ScrollView>
+</LinearLayout>

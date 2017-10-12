@@ -1,0 +1,499 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/white_back">
+    
+ 	<ScrollView android:id="@+id/ScrollView01"
+		android:layout_width="fill_parent" android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp">
+	<LinearLayout android:id="@+id/LinearLayout00"
+			android:orientation="vertical" android:layout_width="fill_parent"
+			android:layout_height="wrap_content">
+					
+			<LinearLayout android:id="@+id/LinearLayout01"
+				android:orientation="horizontal" android:layout_width="fill_parent"
+				android:layout_height="50dp"
+                android:background="@drawable/rectangle_input_back"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="4dp">
+		
+				<TextView android:id="@+id/textViewPublicTitle" android:text="活动名称:  "
+					android:textColor="@color/gray" android:layout_height="wrap_content"
+					android:layout_width="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_gravity="center"
+                    android:textSize="@dimen/contentFontTextSize">
+				</TextView>
+
+				<EditText android:id="@+id/editTextPublicTitle"
+					android:layout_width="fill_parent" android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:layout_gravity="center">
+				</EditText>
+
+			</LinearLayout>
+
+        <View android:layout_height="2dip" android:layout_width="fill_parent"
+            android:background="@color/lightgray"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp" />
+
+        <LinearLayout android:id="@+id/LinearLayout02"
+            android:orientation="horizontal" android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp">
+
+            <TextView android:id="@+id/textViewPortrait" android:text="上传图片 :  "
+                android:textColor="@color/gray" android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:textSize="@dimen/contentFontTextSize"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center">
+            </TextView>
+
+            <ImageView android:id="@+id/imageViewReg3Portrait"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_gravity="center"></ImageView>
+
+            <ImageView android:id="@+id/imageViewPubPortrait"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_gravity="left"></ImageView>
+            <Button
+                android:id="@+id/buttonUpPicChoose"
+                android:layout_width="40dp" android:layout_height="40dp"
+                android:background="@drawable/icon_up_pic"
+                android:layout_gravity="center">
+            </Button>
+            <Button
+                android:id="@+id/buttonUpPicUpload"
+                android:layout_width="40dp" android:layout_height="40dp"
+                android:background="@drawable/checkbox_pressed"
+                android:layout_marginLeft="120dp"
+                android:layout_gravity="center|right">
+            </Button>
+        </LinearLayout>
+
+        <View android:layout_height="2dip" android:layout_width="fill_parent"
+            android:background="@color/lightgray"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp" />
+
+			<LinearLayout android:id="@+id/LinearLayout03"
+				android:orientation="horizontal" android:layout_width="fill_parent"
+				android:layout_height="50dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="4dp">
+				
+				<TextView android:id="@+id/textViewStartTime" android:text="开始时间:  "
+					android:textColor="@color/gray" android:layout_height="wrap_content"
+					android:layout_width="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="8dp"
+                    android:textSize="@dimen/contentFontTextSize">
+				</TextView>
+				<EditText android:id="@+id/editTextPublicStartTime"
+					android:layout_width="fill_parent" android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:layout_gravity="center">
+				</EditText>
+				
+
+			</LinearLayout>
+
+        <View android:layout_height="2dip" android:layout_width="fill_parent"
+            android:background="@drawable/input_division"
+            android:layout_gravity="center" />
+
+			<LinearLayout android:id="@+id/LinearLayout04"
+				android:orientation="horizontal" android:layout_width="fill_parent"
+				android:layout_height="50dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="4dp">
+				
+
+				<TextView android:id="@+id/textViewEndTime" android:text="结束时间:  "
+					android:textColor="@color/gray" android:layout_height="wrap_content"
+					android:layout_width="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_gravity="center"
+                    android:textSize="@dimen/contentFontTextSize">
+				</TextView>
+
+				<EditText android:id="@+id/editTextPublicEndTime"
+					android:layout_width="fill_parent" android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:layout_gravity="center">
+				</EditText>
+				
+			</LinearLayout>
+
+        <View android:layout_height="2dip" android:layout_width="fill_parent"
+            android:background="@drawable/input_division"
+            android:layout_gravity="center" />
+
+			<LinearLayout android:id="@+id/LinearLayout05"
+				android:orientation="horizontal" android:layout_width="fill_parent"
+				android:layout_height="50dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="4dp">
+				
+
+				<TextView android:id="@+id/textViewApplyTime" android:text="报名截止时间:  "
+					android:textColor="@color/gray" android:layout_height="wrap_content"
+					android:layout_width="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_gravity="center"
+                    android:textSize="@dimen/contentFontTextSize">
+				</TextView>
+
+				<EditText android:id="@+id/editTextPublicApplyTime"
+					android:layout_width="fill_parent" android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:layout_gravity="center">
+				</EditText>
+				
+			</LinearLayout>
+
+        <View android:layout_height="2dip" android:layout_width="fill_parent"
+            android:background="@color/lightgray"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp" />
+
+			<LinearLayout android:id="@+id/LinearLayout06"
+				android:orientation="horizontal" android:layout_width="fill_parent"
+				android:layout_height="50dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="4dp"
+                android:background="@drawable/rectangle_input_back">
+			
+			    <TextView android:id="@+id/textViewPublicLocation" android:text="活动地点:  "
+					android:textColor="@color/gray" android:layout_height="wrap_content"
+					android:layout_width="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_gravity="center"
+                    android:textSize="@dimen/contentFontTextSize">
+				</TextView>
+				
+				<EditText android:id="@+id/editTextPublicLocation"
+					android:layout_width="fill_parent" android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:layout_gravity="center">
+				</EditText>
+
+			</LinearLayout>
+
+        <View android:layout_height="2dip" android:layout_width="fill_parent"
+            android:background="@color/lightgray"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp" />
+
+        <LinearLayout android:id="@+id/LinearLayout14"
+				android:orientation="horizontal" android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="4dp">
+			
+				<TextView android:id="@+id/textViewPublicType" android:text="活动类型 :  "
+					android:textColor="@color/gray" android:layout_height="wrap_content"
+					android:layout_width="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="@dimen/contentFontTextSize">
+				</TextView>
+		  		<Spinner android:id="@+id/spinnerPublicType"
+	           		android:layout_width="fill_parent"
+	           		android:layout_height="wrap_content"></Spinner>
+		  	</LinearLayout>
+
+        <View android:layout_height="2dip" android:layout_width="fill_parent"
+            android:background="@color/lightgray"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp" />
+
+		  	<LinearLayout android:id="@+id/LinearLayout07"
+				android:orientation="vertical" android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/rectangle_input_back">
+				
+		  	    <TextView android:id="@+id/textViewPublicBenefit" android:text="活动益处 :  "
+					android:textColor="@color/gray" android:layout_height="wrap_content"
+					android:layout_width="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="@dimen/contentFontTextSize"
+                    android:layout_gravity="center_vertical">
+				</TextView>
+	
+				<EditText android:id="@+id/editTextPublicBenefit"
+					android:layout_width="fill_parent" android:layout_height="wrap_content"
+					android:inputType="textMultiLine" android:gravity="left|top"
+					android:minLines="3"
+                    android:background="@null"
+                    android:layout_marginLeft="10dp">
+				</EditText>
+
+                <View android:layout_height="2dip" android:layout_width="fill_parent"
+                    android:background="@drawable/input_division"
+                    android:layout_gravity="center" />
+		  	    
+			
+				<TextView android:id="@+id/textViewPublicFeature" android:text="活动特点 :  "
+					android:textColor="@color/gray" android:layout_height="wrap_content"
+					android:layout_width="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="@dimen/contentFontTextSize">
+				</TextView>
+	
+				<EditText android:id="@+id/editTextPublicFeature"
+					android:layout_width="fill_parent" android:layout_height="wrap_content"
+					android:inputType="textMultiLine" android:gravity="left|top"
+					android:minLines="3"
+                    android:background="@null"
+                    android:layout_marginLeft="19dp">
+				</EditText>
+
+                <View android:layout_height="2dip" android:layout_width="fill_parent"
+                    android:background="@drawable/input_division"
+                    android:layout_gravity="center" />
+	
+				<TextView android:id="@+id/textViewPublicIntroduction" android:text="活动介绍 :  "
+					android:textColor="@color/gray" android:layout_height="wrap_content"
+					android:layout_width="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="@dimen/contentFontTextSize">
+				</TextView>
+	
+				<EditText android:id="@+id/editTextPublicIntroduction"
+					android:layout_width="fill_parent" android:layout_height="wrap_content"
+					android:inputType="textMultiLine" android:gravity="left|top"
+					android:minLines="3"
+                    android:background="@null"
+                    android:layout_marginLeft="19dp">
+				</EditText>
+				
+			</LinearLayout>
+
+
+        <View android:layout_height="2dip" android:layout_width="fill_parent"
+            android:background="@color/lightgray"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp" />
+
+		  	<LinearLayout android:id="@+id/LinearLayout08"
+				android:orientation="horizontal" android:layout_width="fill_parent"
+				android:layout_height="50dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="4dp"
+                android:background="@drawable/rectangle_input_back">
+			
+				<TextView android:id="@+id/textViewPublicFee" android:text="活动费用 :  "
+					android:textColor="@color/gray" android:layout_height="wrap_content"
+					android:layout_width="wrap_content"
+                    android:textSize="@dimen/contentFontTextSize"
+                    android:layout_marginLeft="10dp"
+                    android:layout_gravity="center">
+				</TextView>
+	
+				<EditText android:id="@+id/editTextPublicFee"
+					android:layout_width="fill_parent" android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:numeric="integer"
+                    android:layout_gravity="center">
+				</EditText>
+			</LinearLayout>
+
+        <View android:layout_height="2dip" android:layout_width="fill_parent"
+            android:background="@color/lightgray"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp" />
+
+		  	<LinearLayout android:id="@+id/LinearLayout09"
+				android:orientation="horizontal" android:layout_width="fill_parent"
+				android:layout_height="50dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="4dp"
+                android:background="@drawable/rectangle_input_back">
+			
+				<TextView android:id="@+id/textViewPublicTel" android:text="联系电话 :  "
+					android:textColor="@color/gray" android:layout_height="wrap_content"
+					android:layout_width="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_gravity="center"
+                    android:textSize="@dimen/contentFontTextSize">
+				</TextView>
+	
+				<EditText android:id="@+id/editTextPublicTel"
+					android:layout_width="fill_parent" android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:phoneNumber="true"
+                    android:layout_gravity="center">
+				</EditText>
+	
+			</LinearLayout>
+
+        <View android:layout_height="2dip" android:layout_width="fill_parent"
+            android:background="@color/lightgray"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp" />
+
+        <LinearLayout android:id="@+id/LinearLayout10"
+				android:orientation="horizontal" android:layout_width="fill_parent"
+				android:layout_height="50dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="4dp"
+            android:background="@drawable/rectangle_input_back">
+			
+				<TextView android:id="@+id/textViewPublicPersonsNum" android:text="人数限制 :  "
+					android:textColor="@color/gray" android:layout_height="wrap_content"
+					android:layout_width="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_gravity="center"
+                    android:textSize="@dimen/contentFontTextSize">
+				</TextView>
+	
+				<EditText android:id="@+id/editTextPublicPersonsNum"
+					android:layout_width="fill_parent" android:layout_height="wrap_content"
+                    android:autoText="false"
+                    android:background="@null"
+                    android:numeric="decimal"
+                    android:layout_gravity="center">
+				</EditText>
+	
+			</LinearLayout>
+
+        <View android:layout_height="2dip" android:layout_width="fill_parent"
+            android:background="@color/lightgray"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp" />
+
+        <LinearLayout android:id="@+id/LinearLayout11"
+				android:orientation="horizontal" android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp">
+			
+				<TextView android:id="@+id/textViewSchool" android:text="学校限制 :  "
+					android:textColor="@color/gray" android:layout_height="wrap_content"
+					android:layout_width="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="@dimen/contentFontTextSize">
+				</TextView>
+				<EditText android:id="@+id/editTextPublicSchool"
+					android:layout_width="fill_parent" android:layout_height="wrap_content"
+                    android:background="@null">
+				</EditText>
+		  	</LinearLayout>
+
+        <View android:layout_height="2dip" android:layout_width="fill_parent"
+            android:background="@color/lightgray"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp" />
+
+        <LinearLayout android:id="@+id/LinearLayout12"
+				android:orientation="horizontal" android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp">
+			
+				<TextView android:id="@+id/textViewGradeLimit" android:text="年级限制 :  "
+					android:textColor="@color/gray" android:layout_height="wrap_content"
+					android:layout_width="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="@dimen/contentFontTextSize">
+				</TextView>
+				<EditText android:id="@+id/editTextPublicGrade"
+					android:layout_width="fill_parent" android:layout_height="wrap_content"
+                    android:background="@null">
+				</EditText>
+		  	</LinearLayout>
+
+        <View android:layout_height="2dip" android:layout_width="fill_parent"
+            android:background="@color/lightgray"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp" />
+
+        <LinearLayout android:id="@+id/LinearLayout13"
+				android:orientation="horizontal" android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp">
+				
+				<TextView android:id="@+id/textViewPubGender" android:text="性　　 别:  "
+					android:textColor="@color/gray" android:layout_height="wrap_content"
+					android:layout_width="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="@dimen/contentFontTextSize">
+				</TextView>
+
+				<RadioGroup android:id="@+id/radioGroupPubGender" android:contentDescription="性别" android:layout_width="wrap_content" android:layout_height="wrap_content">
+	     			<RadioButton android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/radioButtonPubNoLimit" android:text="不限" android:checked="true"
+                        style="@style/CustomCheckboxTheme"></RadioButton>
+	     			<RadioButton android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/radioButtonPubMale" android:text="男"
+                        style="@style/CustomCheckboxTheme"></RadioButton>
+	     			<RadioButton android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/radioButtonPubFemale" android:text="女"
+                        style="@style/CustomCheckboxTheme"></RadioButton>
+	  			</RadioGroup>
+
+			</LinearLayout>
+
+		  	<Button
+				android:id="@+id/buttonPubFinish"
+		    	android:layout_width="80dp"
+		    	android:layout_height="80dp"
+		    	android:text="完成"
+                android:background="@drawable/rectangle_button_circle"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center"
+                android:textColor="@color/white" />
+		  	</LinearLayout>
+
+	</ScrollView>
+
+        
+</LinearLayout>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:cview="http://schemas.android.com/apk/res-auto"
+    android:layout_width="200dp"
+    android:layout_height="200dp"
+    android:orientation="horizontal"
+    android:padding="5dp"
+    android:gravity="center">
+
+    <!--  ListView最左边的缩略图 -->
+    <LinearLayout android:id="@+id/thumbnail"
+        android:layout_width="200dp"
+        android:layout_height="150dp"
+        android:layout_alignParentLeft="true">
+
+
+        <ImageView
+            android:id="@+id/activity_imageA"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/test"
+            android:layout_gravity="center" />
+
+    </LinearLayout>
+
+    <LinearLayout android:id="@+id/info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/thumbnail"
+        android:orientation="vertical">
+    <!-- 歌曲名-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+        android:id="@+id/activity_custom_titleA"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#040404"
+        android:typeface="sans"
+        android:textSize="15dip"
+        android:textStyle="bold"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                android:textAlignment="center" />
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+    <!-- 歌手名 -->
+    <TextView
+        android:id="@+id/activity_custom_descriptionA"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#343434"
+        android:textSize="10dip"
+        android:layout_marginLeft="10dp"
+        android:textAlignment="center" />
+        </LinearLayout>
+    <!-- 歌曲播放时间 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+    <TextView
+        android:id="@+id/activity_custom_timeA"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:gravity="right"
+        android:layout_marginRight="10dip"
+        android:textSize="10dip"
+        android:textColor="#10bcc9"
+        android:textStyle="bold"
+        android:textAlignment="center" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>
