@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/white_back">
+    
+	<LinearLayout android:id="@+id/LinearLayout00"
+			android:orientation="vertical" android:layout_width="fill_parent"
+			android:layout_height="wrap_content">
+		  
+
+        <LinearLayout android:id="@+id/LinearLayout14"
+				android:orientation="horizontal" android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="4dp"
+                android:background="@drawable/rectangle_input_back">
+			
+				<TextView android:id="@+id/textViewFilterType" android:text="活动类型 :  "
+					android:textColor="@color/gray" android:layout_height="wrap_content"
+					android:layout_width="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="@dimen/contentFontTextSize">
+				</TextView>
+		  		<Spinner android:id="@+id/spinnerFilterType"
+	           		android:layout_width="fill_parent"
+	           		android:layout_height="wrap_content"></Spinner>
+		  	</LinearLayout>
+
+    
+        <LinearLayout android:id="@+id/LinearLayout10"
+				android:orientation="horizontal" android:layout_width="fill_parent"
+				android:layout_height="50dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="4dp"
+            android:background="@drawable/rectangle_input_back">
+			
+				<TextView android:id="@+id/textViewFilterPersonsNum" android:text="人数限制 :  "
+					android:textColor="@color/gray" android:layout_height="wrap_content"
+					android:layout_width="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_gravity="center"
+                    android:textSize="@dimen/contentFontTextSize">
+				</TextView>
+	
+				<EditText android:id="@+id/editTextFilterPersonsNum"
+					android:layout_width="fill_parent" android:layout_height="wrap_content"
+                    android:autoText="false"
+                    android:background="@null"
+                    android:layout_gravity="center">
+				</EditText>
+	
+			</LinearLayout>
+
+        <View android:layout_height="2dip" android:layout_width="fill_parent"
+            android:background="@color/lightgray"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp" />
+
+        <LinearLayout android:id="@+id/LinearLayout11"
+				android:orientation="horizontal" android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="4dp">
+			
+				<TextView android:id="@+id/textViewSchool" android:text="学校限制 :  "
+					android:textColor="@color/gray" android:layout_height="wrap_content"
+					android:layout_width="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="@dimen/contentFontTextSize">
+				</TextView>
+				<EditText android:id="@+id/editTextFilterSchool"
+					android:layout_width="fill_parent" android:layout_height="wrap_content"
+                    android:background="@null">
+				</EditText>
+		  	</LinearLayout>
+
+        <View android:layout_height="2dip" android:layout_width="fill_parent"
+            android:background="@color/lightgray"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp" />
+
+        <LinearLayout android:id="@+id/LinearLayout12"
+				android:orientation="horizontal" android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="4dp">
+			
+				<TextView android:id="@+id/textViewGradeLimit" android:text="年级限制 :  "
+					android:textColor="@color/gray" android:layout_height="wrap_content"
+					android:layout_width="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="@dimen/contentFontTextSize">
+				</TextView>
+				<EditText android:id="@+id/editTextFilterGrade"
+					android:layout_width="fill_parent" android:layout_height="wrap_content"
+                    android:background="@null">
+				</EditText>
+		  	</LinearLayout>
+
+        <View android:layout_height="2dip" android:layout_width="fill_parent"
+            android:background="@color/lightgray"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp" />
+
+        <LinearLayout android:id="@+id/LinearLayout13"
+				android:orientation="horizontal" android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="4dp">
+				
+				<TextView android:id="@+id/textViewFilterGender" android:text="性　　 别:  "
+					android:textColor="@color/gray" android:layout_height="wrap_content"
+					android:layout_width="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="@dimen/contentFontTextSize">
+				</TextView>
+
+				<RadioGroup android:id="@+id/radioGroupFilterGender" android:contentDescription="性别" android:layout_width="wrap_content" android:layout_height="wrap_content">
+	     			<RadioButton android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/radioButtonFilterNoLimit" android:text="不限" android:checked="true"
+                        style="@style/CustomCheckboxTheme"></RadioButton>
+	     			<RadioButton android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/radioButtonFilterMale" android:text="男"
+                        style="@style/CustomCheckboxTheme"></RadioButton>
+	     			<RadioButton android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/radioButtonFilterFemale" android:text="女"
+                        style="@style/CustomCheckboxTheme"></RadioButton>
+	  			</RadioGroup>
+
+			</LinearLayout>
+
+		  	</LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center">
+	<Button
+				android:id="@+id/buttonFilterNew"
+		    	android:layout_width="80dp"
+		    	android:layout_height="80dp"
+		    	android:text="最新"
+                android:background="@drawable/rectangle_button_circle"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center"
+                android:textColor="@color/white"
+        android:visibility="invisible" />
+	    	<Button
+				android:id="@+id/buttonFilterHot"
+		    	android:layout_width="80dp"
+		    	android:layout_height="80dp"
+		    	android:text="筛选"
+                android:background="@drawable/rectangle_button_circle"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center"
+                android:textColor="@color/white" />
+			  	<Button
+				android:id="@+id/buttonFilterRec"
+		    	android:layout_width="80dp"
+		    	android:layout_height="80dp"
+		    	android:text="推荐"
+                android:background="@drawable/rectangle_button_circle"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center"
+                android:textColor="@color/white"
+                    android:visibility="invisible" />
+    </LinearLayout>
+	
+        
+</LinearLayout>

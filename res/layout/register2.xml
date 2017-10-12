@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?><LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <LinearLayout android:id="@+id/LinearLayout05"
+		android:orientation="horizontal" android:layout_width="202dp"
+		android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp">
+		<TextView android:id="@+id/textViewRname" android:text="我喜欢的:  "
+			android:textColor="#6495ED" android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+            android:textSize="20dp">
+		</TextView>
+		<LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+ 
+            <CheckBox
+            	android:id="@+id/checkBoxRead"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="读书"
+                style="@style/CustomCheckboxTheme"
+                android:textSize="20dp" />
+            <CheckBox
+                android:id="@+id/checkBoxTour"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="郊游"
+                style="@style/CustomCheckboxTheme"
+                android:textSize="20dp" />
+
+            <CheckBox
+                android:id="@+id/checkBoxSports"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="运动"
+                style="@style/CustomCheckboxTheme"
+                android:textSize="20dp" />
+            <CheckBox
+                android:id="@+id/checkBoxArt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="文艺"
+                style="@style/CustomCheckboxTheme"
+                android:textSize="20dp" />
+            <CheckBox
+                android:id="@+id/checkBoxFood"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="吃"
+                style="@style/CustomCheckboxTheme"
+                android:textSize="20dp" />
+            <CheckBox
+                android:id="@+id/checkBoxShopping"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="逛街"
+                style="@style/CustomCheckboxTheme"
+                android:textSize="20dp" />
+            
+    	</LinearLayout>
+    </LinearLayout>
+	<Button
+		android:id="@+id/buttonReg2Finish"
+	    android:layout_width="80dp"
+		android:layout_height="80dp"
+   		android:text="完   成"
+        android:textColor="@color/white"
+        android:background="@drawable/rectangle_button_circle_blue"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp" />
+
+</LinearLayout>

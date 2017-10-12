@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?><LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/white_back">
+    
+    <LinearLayout android:id="@+id/LinearLayout05"
+		android:orientation="horizontal" android:layout_width="wrap_content"
+		android:layout_height="wrap_content">
+		<TextView android:id="@+id/textViewGrade" android:text="选择年级:  "
+			android:textColor="#6495ED" android:layout_height="wrap_content"
+			android:layout_width="wrap_content">
+		</TextView>
+		<LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+			<RadioGroup android:id="@+id/radioGroupGradeChooser" android:contentDescription="年级" android:layout_width="wrap_content" android:layout_height="wrap_content">
+	     		<RadioButton android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/radioButtonGradeChooserNoLimit" android:text="不限" android:checked="true"></RadioButton>
+	     		<RadioButton android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/radioButtonGradeChooserFree" android:text="自由选择"
+                    android:textSize="@dimen/contentFontTextSize"></RadioButton>
+	  		</RadioGroup>
+
+            <CheckBox
+            	android:id="@+id/checkBox1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="本科一年级" />
+            <CheckBox
+            	android:id="@+id/checkBox2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="本科二年级" />
+			<CheckBox
+            	android:id="@+id/checkBox3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="本科三年级" />
+			<CheckBox
+            	android:id="@+id/checkBox4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="本科四年级" />
+			<CheckBox
+            	android:id="@+id/checkBox5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="博硕一年级" />
+            <CheckBox
+            	android:id="@+id/checkBox6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="博硕二年级" />
+            <CheckBox
+            	android:id="@+id/checkBox7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="博硕三年级" />
+            <CheckBox
+            	android:id="@+id/checkBox8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="博士四年级" />
+            <CheckBox
+            	android:id="@+id/checkBox9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="博士五年级" />
+    	</LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

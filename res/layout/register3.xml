@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/white_back">
+    
+<ScrollView android:id="@+id/ScrollView01"
+		android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="10dp">
+		
+		<LinearLayout android:id="@+id/LinearLayout0"
+			android:orientation="vertical" android:layout_width="fill_parent"
+			android:layout_height="wrap_content">
+
+			<LinearLayout android:id="@+id/LinearLayout05"
+				android:orientation="horizontal" android:layout_width="fill_parent"
+				android:layout_height="50dp"
+                android:background="@drawable/rectangle_input_back"
+                android:layout_marginBottom="5dp">
+		
+				<TextView android:id="@+id/textViewRname" android:text="真实姓名:  "
+					android:textColor="@color/gray" android:layout_height="wrap_content"
+					android:layout_width="wrap_content"
+                    android:textSize="@dimen/contentFontTextSize"
+                    android:layout_marginLeft="10dp"
+                    android:layout_gravity="center">
+				</TextView>
+
+				<EditText android:id="@+id/editTextRname"
+					android:layout_width="190dip" android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:layout_gravity="center">
+				</EditText>
+
+			</LinearLayout>
+		    
+			<View android:layout_height="2dip" android:layout_width="fill_parent"
+				android:background="@color/lightgray" />
+
+			<LinearLayout android:id="@+id/LinearLayout03"
+				android:orientation="horizontal" android:layout_width="fill_parent"
+				android:layout_height="50dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp">
+				
+				<TextView android:id="@+id/textViewGender" android:text="性　　 别:  "
+					android:textColor="@color/gray" android:layout_height="wrap_content"
+					android:layout_width="wrap_content"
+                    android:layout_gravity="center"
+                    android:textSize="@dimen/contentFontTextSize"
+                    android:layout_marginLeft="10dp">
+				</TextView>
+
+				<RadioGroup android:id="@+id/radioGroupReg3Gender" android:contentDescription="性别" android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:layout_gravity="center">
+	     			<RadioButton android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/radioButtonReg3Male" android:text="男" android:checked="true"
+                        style="@style/CustomCheckboxTheme"
+                        android:textColor="@color/gray"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginTop="10dp"></RadioButton>
+	     			<RadioButton android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/radioButtonReg3Female" android:layout_marginLeft="150px" android:layout_marginTop="-50px" android:text="女"
+                        style="@style/CustomCheckboxTheme"
+                        android:textColor="@color/gray"></RadioButton>
+	  			</RadioGroup>
+
+			</LinearLayout>
+
+			<View android:layout_height="2dip" android:layout_width="fill_parent"
+				android:background="@color/lightgray" />
+
+			<LinearLayout android:id="@+id/LinearLayout04"
+				android:orientation="horizontal" android:layout_width="wrap_content"
+				android:layout_height="wrap_content">
+				
+				<TextView android:id="@+id/textViewSchool" android:text="学　　 校:  "
+					android:textColor="@color/gray" android:layout_height="wrap_content"
+					android:layout_width="wrap_content"
+                    android:textSize="@dimen/contentFontTextSize"
+                    android:layout_marginLeft="10dp"
+                    android:layout_gravity="center">
+				</TextView>
+
+			<Spinner android:id="@+id/spinnerSchool"
+           		android:layout_width="fill_parent"
+           		android:layout_height="wrap_content"
+                android:layout_gravity="center"></Spinner>
+
+
+			</LinearLayout>
+
+
+			<View android:layout_height="2dip" android:layout_width="fill_parent"
+				android:background="@drawable/input_division" />
+			
+			<LinearLayout android:id="@+id/LinearLayout06"
+				android:orientation="horizontal" android:layout_width="fill_parent"
+				android:layout_height="wrap_content">
+			
+			    <TextView android:id="@+id/textViewGrade" android:text="年　　 级:  "
+					android:textColor="@color/gray" android:layout_height="wrap_content"
+					android:layout_width="wrap_content"
+                    android:textSize="@dimen/contentFontTextSize"
+                    android:layout_marginLeft="10dp"
+                    android:layout_gravity="center">
+				</TextView>
+				
+				<Spinner android:id="@+id/spinnerGrade"
+           			android:layout_width="fill_parent"
+           			android:layout_height="wrap_content"
+                    android:layout_gravity="center"></Spinner>
+
+			</LinearLayout>
+			<View android:layout_height="2dip" android:layout_width="fill_parent"
+				android:background="@drawable/input_division" />
+			
+			<LinearLayout android:id="@+id/LinearLayout06_reg"
+				android:orientation="horizontal" android:layout_width="wrap_content"
+				android:layout_height="wrap_content">
+			
+			    <TextView android:id="@+id/textViewDepartment" android:text="院　　 系:  "
+					android:textColor="@color/gray" android:layout_height="wrap_content"
+					android:layout_width="wrap_content"
+                    android:textSize="@dimen/contentFontTextSize"
+                    android:layout_marginLeft="10dp"
+                    android:layout_gravity="center">
+				</TextView>
+				
+				<Spinner android:id="@+id/spinnerDepartment"
+           			android:layout_width="fill_parent"
+           			android:layout_height="wrap_content"
+                    android:layout_gravity="center"></Spinner>
+
+			</LinearLayout>
+						<View android:layout_height="2dip" android:layout_width="fill_parent"
+				android:background="@color/lightgray" />
+			
+			<LinearLayout android:id="@+id/LinearLayout06_2"
+				android:orientation="horizontal" android:layout_width="match_parent"
+				android:layout_height="50dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/rectangle_input_back">
+			
+			    <TextView android:id="@+id/textViewStudentID" android:text="学　　 号:  "
+					android:textColor="@color/gray" android:layout_height="wrap_content"
+					android:layout_width="wrap_content"
+                    android:textSize="@dimen/contentFontTextSize"
+                    android:layout_marginLeft="10dp"
+                    android:layout_gravity="center">
+				</TextView>
+				
+				<EditText android:id="@+id/editTextStudentID"
+					android:layout_width="190dip" android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:numeric="integer"
+                    android:background="@null">
+				</EditText>
+
+			</LinearLayout>
+            <View android:layout_height="2dip" android:layout_width="fill_parent"
+                android:background="@color/lightgray" />
+						<LinearLayout android:id="@+id/LinearLayout06_1"
+				android:orientation="horizontal" android:layout_width="match_parent"
+				android:layout_height="50dp"
+                            android:background="@drawable/rectangle_input_back"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="5dp">
+			
+			    <TextView android:id="@+id/textViewPhone" android:text="电　　 话:  "
+					android:textColor="@color/gray" android:layout_height="wrap_content"
+					android:layout_width="wrap_content"
+                    android:textSize="@dimen/contentFontTextSize"
+                    android:layout_marginLeft="10dp"
+                    android:layout_gravity="center">
+				</TextView>
+				
+				<EditText android:id="@+id/editTextPhone"
+                    android:phoneNumber="true"
+					android:layout_width="190dip" android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@null">
+				</EditText>
+
+			</LinearLayout>
+            <View android:layout_height="2dip" android:layout_width="fill_parent"
+                android:background="@color/lightgray" />
+			
+			<LinearLayout android:id="@+id/LinearLayout10"
+				android:orientation="horizontal" android:layout_width="match_parent"
+				android:layout_height="50dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp">
+
+				<TextView android:id="@+id/textViewPortrait" android:text="其他头像 :  "
+					android:textColor="@color/gray" android:layout_height="wrap_content"
+					android:layout_width="wrap_content"
+                    android:textSize="@dimen/contentFontTextSize"
+                    android:layout_marginLeft="10dp"
+                    android:layout_gravity="center">
+				</TextView>
+
+				<ImageView android:id="@+id/imageViewReg3Portrait"
+					android:layout_width="wrap_content" 
+					android:layout_height="wrap_content"
+					android:layout_marginLeft="5dp"
+                    android:layout_gravity="center"></ImageView>
+
+				<Button
+                    android:id="@+id/buttonReg3Choose"
+					android:layout_width="40dp" android:layout_height="40dp"
+                    android:background="@drawable/icon_up_pic"
+                    android:layout_gravity="center">
+				</Button>
+				<Button
+                    android:id="@+id/buttonReg3Upload"
+					android:layout_width="40dp" android:layout_height="40dp"
+                    android:background="@drawable/checkbox_pressed"
+                    android:layout_marginLeft="20dp"
+                    android:layout_gravity="center|right">
+				</Button>
+			</LinearLayout>
+			
+
+			<Button
+				android:id="@+id/buttonReg3Finish"
+			    android:layout_width="80dp"
+		        android:layout_height="80dp"
+		        android:text="完成"
+                android:layout_gravity="center"
+                android:textColor="@color/white"
+                android:background="@drawable/rectangle_button_circle" />
+
+		</LinearLayout>
+	</ScrollView>
+</LinearLayout>
