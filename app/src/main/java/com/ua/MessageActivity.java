@@ -5,7 +5,7 @@ import java.util.HashMap;
 
 import org.apache.http.Header;
 
-import com.ua.ua.R;
+import com.ua.R;
 import com.ua.bean.MessageBean;
 import com.ua.parser.MessageParser;
 import com.ua.view.CustomImageView;

@@ -3,7 +3,7 @@ package com.ua.adapter;
 import java.util.ArrayList;  
 import java.util.HashMap;  
 
-import com.ua.ua.R;
+import com.ua.R;
 import com.ua.view.CustomImageView;
 import com.squareup.picasso.Picasso;
 

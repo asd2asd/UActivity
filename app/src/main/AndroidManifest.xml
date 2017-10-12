@@ -29,13 +29,13 @@
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
-        android:name="com.ua.ua.com.example.MyApplication"
+        android:name="com.ua.MyApplication"
         android:theme="@style/AppTheme" >
         <meta-data  
         	android:name="com.baidu.lbsapi.API_KEY"  
         	android:value="H6Czxz5eeVXYCX48yEqQwKBx" />  
         <activity
-            android:name="com.ua.ua.com.example.LoginActivity"
+            android:name="com.ua.LoginActivity"
             android:label="@string/app_name"
             android:theme="@android:style/Theme.NoTitleBar" >
             <intent-filter>
@@ -43,20 +43,20 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.ua.ua.com.example.MainActivity"
+        <activity android:name="com.ua.MainActivity"
             android:theme="@android:style/Theme.NoTitleBar"></activity>
-        <activity android:name="com.ua.ua.com.example.Register1Activity"></activity>
-        <activity android:name="com.ua.ua.com.example.Register2Activity"></activity>
-        <activity android:name="com.ua.ua.com.example.Register3Activity"
+        <activity android:name="com.ua.Register1Activity"></activity>
+        <activity android:name="com.ua.Register2Activity"></activity>
+        <activity android:name="com.ua.Register3Activity"
             android:windowSoftInputMode="adjustUnspecified|stateHidden" ></activity>
-        <activity android:name="com.ua.ua.com.example.RecomendActivity"></activity>
-        <activity android:name="com.ua.ua.com.example.MessageActivity"
+        <activity android:name="com.ua.RecomendActivity"></activity>
+        <activity android:name="com.ua.MessageActivity"
             android:windowSoftInputMode="adjustUnspecified|stateHidden" ></activity>
-        <activity android:name="com.ua.ua.com.example.DetailActivity"></activity>
-        <activity android:name="com.ua.ua.com.example.MyActivityActivity"></activity>
-        <activity android:name="com.ua.ua.com.example.PublicActivity"
+        <activity android:name="com.ua.DetailActivity"></activity>
+        <activity android:name="com.ua.MyActivityActivity"></activity>
+        <activity android:name="com.ua.PublicActivity"
             android:windowSoftInputMode="adjustUnspecified|stateHidden" ></activity>
-        <activity android:name="com.ua.ua.com.example.SettingActivity"></activity>
+        <activity android:name="com.ua.SettingActivity"></activity>
         <activity android:name="com.ua.snow.SnowActivity"></activity>
 
     </application>

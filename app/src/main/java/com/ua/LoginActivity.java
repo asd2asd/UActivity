@@ -12,7 +12,7 @@ import java.util.Timer;
 import org.apache.http.Header;
 import org.json.JSONObject;
 
-import com.ua.ua.R;
+import com.ua.R;
 import com.ua.handler.LoginHandler;
 import com.ua.parser.LoginParser;
 import com.ua.snow.SnowSurfaceView;

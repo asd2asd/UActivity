@@ -5,7 +5,7 @@ import java.util.HashMap;
 
 import org.apache.http.Header;
 
-import com.ua.ua.R;
+import com.ua.R;
 import com.ua.bean.ActivityListBean;
 import com.ua.parser.MyActivityListParser;
 import com.loopj.android.http.AsyncHttpClient;

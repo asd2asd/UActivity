@@ -20,7 +20,7 @@ import android.widget.RadioButton;
 import android.widget.Spinner;
 import android.widget.TextView;
 
-import com.ua.ua.R;
+import com.ua.R;
 
 
 public class RecomendActivity extends Activity {

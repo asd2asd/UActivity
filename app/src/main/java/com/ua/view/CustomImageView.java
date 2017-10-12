@@ -17,7 +17,7 @@ import android.graphics.RectF;
 import android.util.TypedValue;
 import android.widget.ImageView;
 
-import com.ua.ua.R;
+import com.ua.R;
 
 /**
  * Created by justs_000 on 2014/12/20.

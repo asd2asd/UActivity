@@ -14,7 +14,7 @@ import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
 
 import com.ua.DetailActivity;
-import com.ua.ua.R;
+import com.ua.R;
 
 //import org.jetbrains.annotations.Nullable;
 

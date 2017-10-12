@@ -8,7 +8,7 @@ import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.ImageView;
 
-import com.ua.ua.R;
+import com.ua.R;
 
 
 public class MyActivityActivity extends Activity {

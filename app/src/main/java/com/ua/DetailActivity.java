@@ -17,7 +17,7 @@ import org.json.JSONException;
 //import com.baidu.mapapi.search.poi.PoiDetailResult;
 //import com.baidu.mapapi.search.poi.PoiResult;
 //import com.baidu.mapapi.search.poi.PoiSearch;
-import com.ua.ua.R;
+import com.ua.R;
 import com.ua.bean.ActivityBean;
 import com.ua.parser.ActivityParser;
 import com.ua.view.CustomImageView;

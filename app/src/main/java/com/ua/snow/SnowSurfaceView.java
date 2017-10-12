@@ -19,7 +19,7 @@ import android.view.SurfaceView;
 import android.view.ViewGroup.LayoutParams;
 import android.view.WindowManager;
 
-import com.ua.ua.R;
+import com.ua.R;
 
 public class SnowSurfaceView extends SurfaceView implements
 		SurfaceHolder.Callback, Runnable {

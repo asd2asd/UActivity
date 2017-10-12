@@ -20,7 +20,7 @@ import android.widget.Toast;
 import android.widget.AdapterView.OnItemClickListener;
 import android.widget.GridView;
 
-import com.ua.ua.R;
+import com.ua.R;
 import com.ua.bean.ActivityListBean;
 import com.ua.parser.ActivityListParser;
 import com.loopj.android.http.AsyncHttpClient;

@@ -15,7 +15,7 @@ import android.widget.TabHost;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.ua.ua.R;
+import com.ua.R;
 import com.ua.view.PopMenu;
 
 /**

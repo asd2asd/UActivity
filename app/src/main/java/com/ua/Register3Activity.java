@@ -8,7 +8,7 @@ import org.apache.http.Header;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import com.ua.ua.R;
+import com.ua.R;
 import com.ua.parser.ImageParser;
 import com.loopj.android.http.AsyncHttpClient;
 import com.loopj.android.http.AsyncHttpResponseHandler;

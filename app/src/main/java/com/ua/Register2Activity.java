@@ -10,7 +10,7 @@ import java.net.URL;
 import java.util.ArrayList;
 import java.util.Timer;
 
-import com.ua.ua.R;
+import com.ua.R;
 import com.ua.parser.Register2Parser;
 
 

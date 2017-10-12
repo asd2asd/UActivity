@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 
-import com.ua.ua.R;
+import com.ua.R;
 import com.ua.bean.ActivityListBean;
 import com.ua.parser.ActivityListParser;
 import com.ua.view.CardAdapter;
