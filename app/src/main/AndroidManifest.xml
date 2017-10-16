@@ -2,63 +2,76 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.ua"
     android:versionCode="1"
-    android:versionName="1.0" >
-	<uses-permission android:name="android.permission.INTERNET"/>
-    <uses-permission android:name="android.permission.GET_ACCOUNTS" />  
-	<uses-permission android:name="android.permission.USE_CREDENTIALS" />  
-	<uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />  
-	<uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS" />  
-	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />  
-	<uses-permission android:name="android.permission.INTERNET" />  
-	<uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />  
-	<uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />  
-	<uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />  
-	<uses-permission android:name="android.permission.READ_PHONE_STATE" />  
-	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />  
-	<uses-permission android:name="android.permission.BROADCAST_STICKY" />  
-	<uses-permission android:name="android.permission.WRITE_SETTINGS" />  
-	<uses-permission android:name="android.permission.READ_PHONE_STATE" />
-	
-	
+    android:versionName="1.0">
+
     <uses-sdk
         android:minSdkVersion="14"
         android:targetSdkVersion="17" />
 
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.BROADCAST_STICKY" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
     <application
-        android:hardwareAccelerated="true"
+        android:name=".MyApplication"
         android:allowBackup="true"
+        android:hardwareAccelerated="true"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
-        android:name="com.ua.MyApplication"
-        android:theme="@style/AppTheme" >
-        <meta-data  
-        	android:name="com.baidu.lbsapi.API_KEY"  
-        	android:value="H6Czxz5eeVXYCX48yEqQwKBx" />  
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="H6Czxz5eeVXYCX48yEqQwKBx" />
+
         <activity
-            android:name="com.ua.LoginActivity"
+            android:name=".LoginActivity"
             android:label="@string/app_name"
-            android:theme="@android:style/Theme.NoTitleBar" >
+            android:theme="@android:style/Theme.NoTitleBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.ua.MainActivity"
-            android:theme="@android:style/Theme.NoTitleBar"></activity>
-        <activity android:name="com.ua.Register1Activity"></activity>
-        <activity android:name="com.ua.Register2Activity"></activity>
-        <activity android:name="com.ua.Register3Activity"
-            android:windowSoftInputMode="adjustUnspecified|stateHidden" ></activity>
-        <activity android:name="com.ua.RecomendActivity"></activity>
-        <activity android:name="com.ua.MessageActivity"
-            android:windowSoftInputMode="adjustUnspecified|stateHidden" ></activity>
-        <activity android:name="com.ua.DetailActivity"></activity>
-        <activity android:name="com.ua.MyActivityActivity"></activity>
-        <activity android:name="com.ua.PublicActivity"
-            android:windowSoftInputMode="adjustUnspecified|stateHidden" ></activity>
-        <activity android:name="com.ua.SettingActivity"></activity>
-        <activity android:name="com.ua.snow.SnowActivity"></activity>
+        <activity
+            android:name=".MainActivity"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <activity android:name=".Register1Activity" />
+        <activity android:name=".Register2Activity" />
+        <activity
+            android:name=".Register3Activity"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity android:name=".RecomendActivity" />
+        <activity
+            android:name=".MessageActivity"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity android:name=".DetailActivity" />
+        <activity android:name=".MyActivityActivity" />
+        <activity
+            android:name=".PublicActivity"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity android:name=".SettingActivity" />
+        <activity android:name=".snow.SnowActivity" />
+        <activity android:name="org.js.healthy.deviceClient.DeviceActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>
