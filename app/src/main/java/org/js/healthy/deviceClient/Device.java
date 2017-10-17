@@ -10,6 +10,7 @@ import org.js.healthy.deviceClient.parser.BaseParser;
 import org.js.healthy.deviceClient.utils.Contants;
 import org.js.healthy.deviceClient.utils.HttpUtil;
 import org.js.healthy.deviceClient.utils.UrlUtil;
+import org.js.healthy.web.utils.JacksonJsonUtil;
 import org.js.healthy.web.vo.ResponseVO;
 
 public class Device {
@@ -27,7 +28,7 @@ public class Device {
         HttpUtil.asyncGet(context, UrlUtil.getFullUrl(Contants.getRegisterUrl(), Contants.getIdentifyFiled(identify)), new HttpUtil.HttpResponse() {
             @Override
             public void OnSuccess(String responseJson) {
-                if(null!=deviceEvent) deviceEvent.OnRegistered(BaseParser.parser2Bean(responseJson));
+                if(null!=deviceEvent) deviceEvent.OnRegistered((ResponseVO)JacksonJsonUtil.jsonToBean(responseJson,ResponseVO.class));
             }
 
             @Override
@@ -42,7 +43,7 @@ public class Device {
         HttpUtil.asyncGet(context, UrlUtil.getFullUrl(Contants.getConnectUrl(), Contants.getIdentifyFiled(identify)), new HttpUtil.HttpResponse() {
             @Override
             public void OnSuccess(String responseJson) {
-                if(null!=deviceEvent) deviceEvent.OnLogin(BaseParser.parser2Bean(responseJson));
+                if(null!=deviceEvent) deviceEvent.OnLogin((ResponseVO)JacksonJsonUtil.jsonToBean(responseJson,ResponseVO.class));
             }
 
             @Override
@@ -57,7 +58,7 @@ public class Device {
         HttpUtil.asyncGet(context, UrlUtil.getFullUrl(Contants.getHeartBeatUrl(), Contants.getTokenFiled(token)), new HttpUtil.HttpResponse() {
             @Override
             public void OnSuccess(String responseJson) {
-                if(null!=deviceEvent) deviceEvent.OnHeartBeat(BaseParser.parser2Bean(responseJson));
+                if(null!=deviceEvent) deviceEvent.OnHeartBeat((ResponseVO)JacksonJsonUtil.jsonToBean(responseJson,ResponseVO.class));
             }
 
             @Override

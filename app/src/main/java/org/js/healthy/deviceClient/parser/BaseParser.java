@@ -26,10 +26,16 @@ public class BaseParser {
 
             int resultCode = user.getInt("errorcode");
             String message = user.getString("msg");
-            JSONObject data = user.getJSONObject("data");
             response.setMsg(message);
             response.setErrorcode(resultCode);
-            response.setData(data);
+            try {
+                JSONObject data = user.getJSONObject("data");
+                response.setData(data);
+            }
+            catch (Exception e)
+            {
+
+            }
 
         }catch (Exception e) {
             // TODO Auto-generated catch block

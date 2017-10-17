@@ -11,10 +11,11 @@ public class UrlUtil {
         String fullUrl = url;
         if(filedStr.length>0) fullUrl+="?";
         int t=0;
-        for(t=0;t<filedStr.length;t++);
+        while(t<filedStr.length)
         {
             fullUrl += filedStr[t];
             if(t<filedStr.length-1) fullUrl+= "&";
+            t++;
         }
         return fullUrl;
     }
