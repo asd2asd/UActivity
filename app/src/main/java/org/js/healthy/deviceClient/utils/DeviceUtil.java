@@ -1,7 +1,7 @@
 package org.js.healthy.deviceClient.utils;
 
 import android.content.Context;
-import android.telephony.TelephonyManager;
+import android.telecom.TelecomManager;
 
 /**
  * Created by jose on 2017/10/16.
@@ -11,8 +11,8 @@ public class DeviceUtil {
 
     public static String getPhoneImei(Context context)
     {
-        TelephonyManager TelephonyMgr = (TelephonyManager)context.getSystemService(Context.TELECOM_SERVICE);
-        String szImei = TelephonyMgr.getDeviceId();
+        TelecomManager TelephonyMgr = (TelecomManager)context.getSystemService(Context.TELEPHONY_SERVICE);
+        String szImei = TelephonyMgr.;
         return szImei;
     }
 
