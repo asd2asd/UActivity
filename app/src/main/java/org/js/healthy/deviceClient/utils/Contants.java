@@ -6,7 +6,7 @@ package org.js.healthy.deviceClient.utils;
 
 public class Contants {
 
-    public final static String SeverIpAddress = "http://192.168.10.178:8080";
+    public final static String SeverIpAddress = "http://192.168.1.201:8080";
 
     public final  static String ProjectName = "healthy";
 

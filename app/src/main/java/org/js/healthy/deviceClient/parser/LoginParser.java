@@ -7,6 +7,8 @@ import org.js.healthy.web.vo.UserVO;
 import org.json.JSONObject;
 import org.json.JSONTokener;
 
+import java.util.HashMap;
+
 /**
  * Created by jose on 2017/10/17.
  */
@@ -24,8 +26,8 @@ public class LoginParser extends BaseParser {
 
         try {
 
-            JSONObject data = (JSONObject) responseVO.getData();
-            token = data.getString("token");
+            HashMap data = (HashMap) responseVO.getData();
+            token = (String)data.get("token");
         }
         catch (Exception e)
         {

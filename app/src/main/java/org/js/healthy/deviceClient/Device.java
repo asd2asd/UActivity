@@ -6,11 +6,14 @@ package org.js.healthy.deviceClient;
 
 import android.content.Context;
 
+import com.loopj.android.http.RequestParams;
+
 import org.js.healthy.deviceClient.parser.BaseParser;
 import org.js.healthy.deviceClient.utils.Contants;
 import org.js.healthy.deviceClient.utils.HttpUtil;
 import org.js.healthy.deviceClient.utils.UrlUtil;
 import org.js.healthy.web.utils.JacksonJsonUtil;
+import org.js.healthy.web.vo.HeartBeatVO;
 import org.js.healthy.web.vo.ResponseVO;
 
 public class Device {
@@ -48,14 +51,17 @@ public class Device {
 
             @Override
             public void OnFailed(int responseCode) {
-                if(null!=deviceEvent) deviceEvent.OnLogin(BaseParser.getEmptyResponse(responseCode));
+                if(null!=deviceEvent) deviceEvent.OnLogin(BaseParser.getEmptyResponse(-1));
             }
         });
 
     }
-    public void heartBeat(String token)
+    public void heartBeat(HeartBeatVO heartBeatVO, String token)
     {
-        HttpUtil.asyncGet(context, UrlUtil.getFullUrl(Contants.getHeartBeatUrl(), Contants.getTokenFiled(token)), new HttpUtil.HttpResponse() {
+        RequestParams params = new RequestParams();
+        heartBeatVO.setToken(token);
+        params.set
+        HttpUtil.asyncPost(context, UrlUtil.getFullUrl(Contants.getHeartBeatUrl()),params, new HttpUtil.HttpResponse() {
             @Override
             public void OnSuccess(String responseJson) {
                 if(null!=deviceEvent) deviceEvent.OnHeartBeat((ResponseVO)JacksonJsonUtil.jsonToBean(responseJson,ResponseVO.class));

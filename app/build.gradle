@@ -14,6 +14,13 @@ android {
         minSdkVersion 16
         targetSdkVersion 23
     }
+
+    sourceSets {
+        main() {
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+
 //    sourceSets {
 //        main {
 //            manifest.srcFile 'AndroidManifest.xml'

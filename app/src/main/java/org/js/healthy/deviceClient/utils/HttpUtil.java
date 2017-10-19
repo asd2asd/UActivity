@@ -12,6 +12,7 @@ import com.ua.MyApplication;
 import com.ua.parser.LoginParser;
 
 import org.apache.http.Header;
+import org.apache.http.entity.StringEntity;
 
 import java.io.ByteArrayInputStream;
 import java.io.IOException;
@@ -46,6 +47,27 @@ public class HttpUtil {
 //                } catch (IOException e) {
 //                    e.printStackTrace();
 //                }
+                responseHandler.OnSuccess(new String(bytes));
+
+            }
+
+            @Override
+            public void onFailure(int i, Header[] headers, byte[] bytes, Throwable throwable) {
+
+                responseHandler.OnFailed(i);
+            }
+        });
+    }
+
+    public static void asyncPost(Context context,String url,RequestParams params, final HttpResponse responseHandler)
+    {
+        AsyncHttpClient client = new AsyncHttpClient();
+
+        StringEntity stringEntity = null;
+        client.post(context, url, stringEntity,"application/json", new AsyncHttpResponseHandler() {
+            @Override
+            public void onSuccess(int i, Header[] headers, byte[] bytes) {
+//
                 responseHandler.OnSuccess(new String(bytes));
 
             }
