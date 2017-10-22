@@ -1,10 +1,10 @@
 apply plugin: 'com.android.application'
 
-dependencies {
-    compile fileTree(dir: 'libs', include: '*.jar')
-    compile 'com.android.support:appcompat-v7:24.2.1'
+repositories {
+    flatDir {
+        dir 'libs'
+    }
 }
-
 android {
     compileSdkVersion 24
     buildToolsVersion "24.0.3"
@@ -13,6 +13,7 @@ android {
         applicationId "com.ua"
         minSdkVersion 16
         targetSdkVersion 23
+
     }
 
     sourceSets {
@@ -21,16 +22,21 @@ android {
         }
     }
 
-//    sourceSets {
-//        main {
-//            manifest.srcFile 'AndroidManifest.xml'
-//            java.srcDirs = ['src']
-//            aidl.srcDirs = ['src']
-//            renderscript.srcDirs = ['src']
-//            res.srcDirs = ['res']
-//            assets.srcDirs = ['assets']
-//        }
-//
-//        instrumentTest.setRoot('tests')
-//    }
+    packagingOptions {
+        exclude 'META-INF/NOTICE' // will not include NOTICE file
+        exclude 'META-INF/LICENSE' // will not include LICENSE file
+        exclude 'META-INF/ASL2.0' //will not include ALS2.0 file
+    }
+
+
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: '*.jar')
+    compile 'com.android.support:appcompat-v7:24.2.1'
+    compile 'com.github.asd2asd:healthty-view-mode:1.1'
+    compile group: 'commons-beanutils', name: 'commons-beanutils', version: '1.9.3'
+
+
+
 }

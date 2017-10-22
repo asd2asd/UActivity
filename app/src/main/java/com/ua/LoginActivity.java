@@ -353,7 +353,7 @@ public class LoginActivity extends Activity {
 
                 }
                 else{
-                    Toast.makeText(LoginActivity.this, "欢迎进入U活动", Toast.LENGTH_LONG).show();
+                    Toast.makeText(LoginActivity.this, "欢迎进入", Toast.LENGTH_LONG).show();
                     Intent intent = new Intent(LoginActivity.this, MainActivity.class);
                     LoginActivity.this.startActivity(intent);
                     //finish();
