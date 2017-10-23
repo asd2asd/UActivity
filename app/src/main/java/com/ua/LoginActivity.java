@@ -98,6 +98,8 @@ public class LoginActivity extends Activity {
         setContentView(R.layout.login);
 
 
+//        snowSurfaceView = new SnowSurfaceView(this);
+        snowSurfaceView = (SnowSurfaceView)findViewById(R.id.snowSurfaceView);
 
 
 
@@ -127,16 +129,16 @@ public class LoginActivity extends Activity {
             name = editTextUser.getText().toString();
             password = editTextPassword.getText().toString();
 
-            // 如果没有记住用户名和密码，则启动一个新的ProgressDialog,首先从数据库中选取信息
-            pd.show();
-            // 启动线程从后台数据库中获取信息进行验证
-            Thread  thread = new Thread(runnable);
-            thread.start();
-            //跳转界面
-// 			Toast.makeText(LoginActivity.this, "欢迎进入U活动", Toast.LENGTH_LONG).show();
-//
-//			Intent intent = new Intent(LoginActivity.this,ActivityListActivity.class);
-//			LoginActivity.this.startActivity(intent);
+//            // 如果没有记住用户名和密码，则启动一个新的ProgressDialog,首先从数据库中选取信息
+//            pd.show();
+//            // 启动线程从后台数据库中获取信息进行验证
+//            Thread  thread = new Thread(runnable);
+//            thread.start();
+//            //跳转界面
+//// 			Toast.makeText(LoginActivity.this, "欢迎进入U活动", Toast.LENGTH_LONG).show();
+////
+////			Intent intent = new Intent(LoginActivity.this,ActivityListActivity.class);
+////			LoginActivity.this.startActivity(intent);
         }
 
 
@@ -170,8 +172,6 @@ public class LoginActivity extends Activity {
             }
         });
 
-        snowSurfaceView = new SnowSurfaceView(this);
-        snowSurfaceView = (SnowSurfaceView)findViewById(R.id.snowSurfaceView);
 
 
 
